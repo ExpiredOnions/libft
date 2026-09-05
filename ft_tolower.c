@@ -6,14 +6,14 @@
 /*   By: tchantas <tchantasarn@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/05 11:00:31 by tchantas          #+#    #+#             */
-/*   Updated: 2026/09/05 11:00:31 by tchantas         ###   ########.fr       */
+/*   Updated: 2026/09/05 16:43:17 by tchantas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int a)
+int	ft_tolower(int a)
 {
-    if (a >= 'A' && a <= 'Z')
-        return (a + 32);
-    else
-        return (a);
+	if (a >= 'A' && a <= 'Z')
+		return (a + 32);
+	else
+		return (a);
 }

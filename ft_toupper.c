@@ -6,14 +6,14 @@
 /*   By: tchantas <tchantasarn@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/05 11:02:05 by tchantas          #+#    #+#             */
-/*   Updated: 2026/09/05 11:02:05 by tchantas         ###   ########.fr       */
+/*   Updated: 2026/09/05 16:42:55 by tchantas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int a)
+int	ft_toupper(int a)
 {
-    if (a >= 'a' && a <= 'z')
-        return (a - 32);
-    else
-        return (a);
+	if (a >= 'a' && a <= 'z')
+		return (a - 32);
+	else
+		return (a);
 }
