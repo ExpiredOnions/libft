@@ -6,14 +6,14 @@
 /*   By: tchantas <tchantasarn@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/05 10:59:01 by tchantas          #+#    #+#             */
-/*   Updated: 2026/09/05 10:59:01 by tchantas         ###   ########.fr       */
+/*   Updated: 2026/09/05 17:05:50 by tchantas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int p)
+int	ft_isprint(int p)
 {
-    if (p >= 32 && p <= 126)
-        return (1);
-    else
-        return (0);
+	if (p >= 32 && p <= 126)
+		return (1);
+	else
+		return (0);
 }

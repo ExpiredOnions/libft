@@ -6,14 +6,14 @@
 /*   By: tchantas <tchantasarn@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/05 10:55:56 by tchantas          #+#    #+#             */
-/*   Updated: 2026/09/05 10:55:56 by tchantas         ###   ########.fr       */
+/*   Updated: 2026/09/05 17:05:23 by tchantas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int a)
+int	ft_isalpha(int a)
 {
-    if ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z'))
-        return (1);
-    else
-        return (0);
+	if ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z'))
+		return (1);
+	else
+		return (0);
 }

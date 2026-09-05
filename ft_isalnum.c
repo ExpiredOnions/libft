@@ -6,14 +6,15 @@
 /*   By: tchantas <tchantasarn@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/05 10:57:50 by tchantas          #+#    #+#             */
-/*   Updated: 2026/09/05 10:57:50 by tchantas         ###   ########.fr       */
+/*   Updated: 2026/09/05 17:05:13 by tchantas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(int a)
+int	ft_isalnum(int a)
 {
-    if ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z') || (a >= '0' && a <= '9'))
-        return (1);
-    else
-        return (0);
+	if ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z') || (a >= '0'
+			&& a <= '9'))
+		return (1);
+	else
+		return (0);
 }

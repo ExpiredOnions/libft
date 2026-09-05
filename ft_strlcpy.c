@@ -6,7 +6,7 @@
 /*   By: tchantas <tchantasarn@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/05 13:43:26 by tchantas          #+#    #+#             */
-/*   Updated: 2026/09/05 13:43:26 by tchantas         ###   ########.fr       */
+/*   Updated: 2026/09/05 17:06:25 by tchantas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	if (size > 0)

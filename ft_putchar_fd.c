@@ -6,7 +6,7 @@
 /*   By: tchantas <tchantasarn@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/05 11:19:42 by tchantas          #+#    #+#             */
-/*   Updated: 2026/09/05 11:19:42 by tchantas         ###   ########.fr       */
+/*   Updated: 2026/09/05 17:07:15 by tchantas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-    write(fd, &c, 1);
+	write(fd, &c, 1);
 }

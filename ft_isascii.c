@@ -6,14 +6,14 @@
 /*   By: tchantas <tchantasarn@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/05 10:58:41 by tchantas          #+#    #+#             */
-/*   Updated: 2026/09/05 10:58:41 by tchantas         ###   ########.fr       */
+/*   Updated: 2026/09/05 17:05:32 by tchantas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int a)
+int	ft_isascii(int a)
 {
-    if (a >= 0 && a <= 127)
-        return (1);
-    else
-        return (0);
+	if (a >= 0 && a <= 127)
+		return (1);
+	else
+		return (0);
 }
