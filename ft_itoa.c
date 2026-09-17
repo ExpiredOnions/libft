@@ -27,31 +27,29 @@ int	numlen(long n)
 	return (len);
 }
 
-int	ft_sign(int n)
-{
-	if (n < 0)
-		return (-n);
-	return (n);
-}
-
 char	*ft_itoa(int n)
 {
+	long	num;
 	int		length;
-	int		sign;
 	char	*str;
 
-	sign = ft_sign(n);
-	length = numlen(n);
+	num = n;
+	length = numlen(num);
 	str = (char *)malloc(sizeof(char) * (length + 1));
 	if (!str)
 		return (NULL);
 	str[length] = '\0';
-	if (n == 0)
+	if (num == 0)
 		str[0] = '0';
-	while (sign > 0)
+	if (num < 0)
 	{
-		str[--length] = (sign % 10) + '0';
-		sign /= 10;
+		str[0] = '-';
+		num = -num;
+	}
+	while (num > 0)
+	{
+		str[--length] = (num % 10) + '0';
+		num /= 10;
 	}
 	return (str);
 }
