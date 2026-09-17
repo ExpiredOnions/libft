@@ -6,13 +6,13 @@
 /*   By: tchantas <tchantasarn@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 13:19:30 by tchantas          #+#    #+#             */
-/*   Updated: 2026/09/15 16:39:08 by tchantas         ###   ########.fr       */
+/*   Updated: 2026/09/17 19:24:29 by tchantas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	numlen(long n)
+static int	numlen(long n)
 {
 	int	len;
 
