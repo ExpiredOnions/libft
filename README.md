@@ -131,4 +131,10 @@ typedef struct s_list
 | `ft_lstiter` | Applies a function to each node's content |
 | `ft_lstmap` | Creates a new list by applying a function to each node's content |
 
+## AI usage
+
+Parts of this project (documentation, debugging assistance, and code review) were
+developed with the help of Claude Code, an AI coding assistant. All code was reviewed,
+tested, and understood before being submitted.
+
 
