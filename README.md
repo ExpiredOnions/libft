@@ -131,10 +131,24 @@ typedef struct s_list
 | `ft_lstiter` | Applies a function to each node's content |
 | `ft_lstmap` | Creates a new list by applying a function to each node's content |
 
+## Resources
+
+### References
+
+- [Linux man pages](https://man7.org/linux/man-pages/): the reference behavior for
+  every libc function re-implemented here (`man 3 strlcpy`, `man 3 memmove`, ...)
+- [cppreference: C standard library](https://en.cppreference.com/w/c): the
+  standard's definition of each function, and which cases are undefined behavior
+- [42 Norminette](https://github.com/42School/norminette): the style checker used
+  to validate the code against the 42 Norm
+- [Valgrind Quick Start](https://valgrind.org/docs/manual/quick-start.html): finding
+  memory leaks and invalid reads/writes, especially in `ft_split` and the list
+  functions
+- [libftTester](https://github.com/Tripouille/libftTester): a test suite for checking
+  each function against the subject
+
 ## AI usage
 
 Parts of this project (documentation, debugging assistance, and code review) were
 developed with the help of Claude Code, an AI coding assistant. All code was reviewed,
 tested, and understood before being submitted.
-
-

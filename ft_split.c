@@ -6,7 +6,7 @@
 /*   By: tchantas <tchantasarn@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/17 18:19:00 by tchantas          #+#    #+#             */
-/*   Updated: 2026/09/17 19:25:31 by tchantas         ###   ########.fr       */
+/*   Updated: 2026/09/23 18:19:24 by tchantas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,25 @@ static size_t	countwords(char const *s, char c)
 			i++;
 	}
 	return (count);
+}
+
+static char	**freesplit(char **result, size_t j)
+{
+	size_t	i;
+
+	i = 0;
+	while ((i < j) && result[i] != NULL)
+		i++;
+	if (i == j)
+		return (result);
+	i = 0;
+	while (i < j)
+	{
+		free(result[i]);
+		i++;
+	}
+	free(result);
+	return (NULL);
 }
 
 char	**ft_split(char const *s, char c)
@@ -56,5 +75,6 @@ char	**ft_split(char const *s, char c)
 			result[j++] = ft_substr(s, start, i - start);
 	}
 	result[j] = NULL;
+	result = freesplit(result, j);
 	return (result);
 }
