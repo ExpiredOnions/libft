@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by <tchantas>.*
+*This project has been created as part of the 42 curriculum by tchantas.*
 
 # libft
 
@@ -147,8 +147,22 @@ typedef struct s_list
 - [libftTester](https://github.com/Tripouille/libftTester): a test suite for checking
   each function against the subject
 
-## AI usage
+### AI usage
 
-Parts of this project (documentation, debugging assistance, and code review) were
-developed with the help of Claude Code, an AI coding assistant. All code was reviewed,
-tested, and understood before being submitted.
+Claude Code (an AI coding assistant) was used during this project for the following,
+scoped tasks:
+
+- **Code review**: reviewing already-written implementations (e.g. `ft_split`,
+  `ft_lstmap`) for edge cases, allocation-failure handling, and norm consistency;
+  this surfaced a logic bug in the error-handling branch of `ft_lstmap`.
+- **Explaining C concepts**: clarifying how function pointers (`del`, `f` parameters
+  used throughout the linked-list functions) and memory ownership work, to build
+  understanding rather than to write code.
+- **Documentation**: drafting and refining this README.
+- **Makefile review**: explaining the build rules and flags already present in the
+  `Makefile`.
+
+No function implementation in this repository was AI-generated: every `.c` file was
+written by hand, and AI assistance was limited to review, explanation, and
+documentation after the fact. All code was read, tested, and understood before being
+submitted.
