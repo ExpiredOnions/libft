@@ -6,7 +6,7 @@
 /*   By: tchantas <tchantasarn@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/17 18:19:04 by tchantas          #+#    #+#             */
-/*   Updated: 2026/09/17 18:22:40 by tchantas         ###   ########.fr       */
+/*   Updated: 2026/11/03 18:20:51 by tchantas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*current;
 	t_list	*next_node;
 
-	if (lst == NULL || del == NULL)
+	if (!lst || !del)
 		return ;
 	current = *lst;
-	while (current != NULL)
+	while (current)
 	{
 		next_node = current->next;
 		del(current->content);

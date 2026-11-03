@@ -6,7 +6,7 @@
 /*   By: tchantas <tchantasarn@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/05 11:14:09 by tchantas          #+#    #+#             */
-/*   Updated: 2026/09/05 16:55:55 by tchantas         ###   ########.fr       */
+/*   Updated: 2026/11/03 18:10:43 by tchantas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ int	ft_atoi(const char *str)
 		num = (num * 10) + (*str - '0');
 		str++;
 	}
-	return (num * sign);
+	num = num * sign;
+	return (num);
 }

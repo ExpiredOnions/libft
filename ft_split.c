@@ -6,7 +6,7 @@
 /*   By: tchantas <tchantasarn@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/17 18:19:00 by tchantas          #+#    #+#             */
-/*   Updated: 2026/09/23 18:19:24 by tchantas         ###   ########.fr       */
+/*   Updated: 2026/11/03 18:16:37 by tchantas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ char	**ft_split(char const *s, char c)
 	size_t	j;
 	size_t	start;
 
-	if (s == NULL)
+	if (!s)
 		return (NULL);
 	result = (char **)malloc(sizeof(char *) * (countwords(s, c) + 1));
 	if (!result)

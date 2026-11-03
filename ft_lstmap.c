@@ -6,7 +6,7 @@
 /*   By: tchantas <tchantasarn@gmail.com>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/17 18:19:02 by tchantas          #+#    #+#             */
-/*   Updated: 2026/09/23 17:36:22 by tchantas         ###   ########.fr       */
+/*   Updated: 2026/11/03 18:21:19 by tchantas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_node;
 	void	*new_content;
 
-	if (lst == NULL || f == NULL || del == NULL)
+	if (!lst || !f || !del)
 		return (NULL);
 	new_list = NULL;
-	while (lst != NULL)
+	while (lst)
 	{
 		new_content = f(lst->content);
 		new_node = ft_lstnew(new_content);
-		if (new_node == NULL)
+		if (new_node)
 		{
 			del(new_content);
 			ft_lstclear(&new_list, del);
